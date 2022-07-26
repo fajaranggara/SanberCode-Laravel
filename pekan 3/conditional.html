@@ -63,15 +63,15 @@
       } else {
         if (role === "") {
           s = `Halo ${name}, Pilih peranmu untuk memulai game!`;
-        } else if (role === "Penyihir") {
+        } else if (role.toLowerCase() === "penyihir") {
           s = `Selamat datang di Dunia Werewolf, ${name} <br>
-            Halo ${role} ${name}, kamu dapat melihat siapa yang menjadi Werewolf!`;
-        } else if (role === "Werewolf") {
+            Halo Penyihir ${name}, kamu dapat melihat siapa yang menjadi Werewolf!`;
+        } else if (role.toLowerCase() === "werewolf") {
           s = `Selamat datang di Dunia Werewolf, ${name} <br>
-            Halo ${role} ${name}, kamu dapat memilih siapa yang akan kamu makan malam ini!`;
-        } else if (role === "Rakjel") {
+            Halo Werewolf ${name}, kamu dapat memilih siapa yang akan kamu makan malam ini!`;
+        } else if (role.toLowerCase() === "rakjel") {
           s = `Selamat datang di Dunia Werewolf, ${name} <br>
-            Halo ${role} ${name}, Kamu menjadi rakyat jelata`;
+            Halo Rakjel ${name}, Kamu menjadi rakyat jelata`;
         } else {
           s = `Pilih satu dari tiga role ini, ${name} <br>
             1. Penyihir <br> 2. Werewolf <br> 3. Rakjel <br>`;
